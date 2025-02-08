@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Rpte_Prueba1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a9ee405f-56c3-4127-91a3-ad4ce9dd82eb">
+	<style name="miestilo">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[($F{columna2}.contains("A"))]]></conditionExpression>
+			<style isBold="true" isUnderline="true">
+				<pen lineStyle="Solid"/>
+			</style>
+		</conditionalStyle>
+	</style>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<field name="columna0" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna0"/>
+		<fieldDescription><![CDATA[columna0]]></fieldDescription>
+	</field>
+	<field name="columna1" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna1"/>
+		<fieldDescription><![CDATA[columna1]]></fieldDescription>
+	</field>
+	<field name="columna2" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna2"/>
+		<fieldDescription><![CDATA[columna2]]></fieldDescription>
+	</field>
+	<field name="columna3" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna3"/>
+		<fieldDescription><![CDATA[columna3]]></fieldDescription>
+	</field>
+	<field name="columna4" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna4"/>
+		<fieldDescription><![CDATA[columna4]]></fieldDescription>
+	</field>
+	<field name="columna5" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna5"/>
+		<fieldDescription><![CDATA[columna5]]></fieldDescription>
+	</field>
+	<field name="columna6" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna6"/>
+		<fieldDescription><![CDATA[columna6]]></fieldDescription>
+	</field>
+	<field name="columna7" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna7"/>
+		<fieldDescription><![CDATA[columna7]]></fieldDescription>
+	</field>
+	<field name="columna8" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna8"/>
+		<fieldDescription><![CDATA[columna8]]></fieldDescription>
+	</field>
+	<field name="columna9" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna9"/>
+		<fieldDescription><![CDATA[columna9]]></fieldDescription>
+	</field>
+	<field name="columna10" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna10"/>
+		<fieldDescription><![CDATA[columna10]]></fieldDescription>
+	</field>
+	<field name="columna11" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna11"/>
+		<fieldDescription><![CDATA[columna11]]></fieldDescription>
+	</field>
+	<field name="columna12" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna12"/>
+		<fieldDescription><![CDATA[columna12]]></fieldDescription>
+	</field>
+	<field name="columna13" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna13"/>
+		<fieldDescription><![CDATA[columna13]]></fieldDescription>
+	</field>
+	<field name="columna14" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna14"/>
+		<fieldDescription><![CDATA[columna14]]></fieldDescription>
+	</field>
+	<field name="columna15" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna15"/>
+		<fieldDescription><![CDATA[columna15]]></fieldDescription>
+	</field>
+	<field name="columna16" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna16"/>
+		<fieldDescription><![CDATA[columna16]]></fieldDescription>
+	</field>
+	<field name="columna17" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna17"/>
+		<fieldDescription><![CDATA[columna17]]></fieldDescription>
+	</field>
+	<field name="columna18" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna18"/>
+		<fieldDescription><![CDATA[columna18]]></fieldDescription>
+	</field>
+	<field name="columna19" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna19"/>
+		<fieldDescription><![CDATA[columna19]]></fieldDescription>
+	</field>
+	<field name="columna20" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna20"/>
+		<fieldDescription><![CDATA[columna20]]></fieldDescription>
+	</field>
+	<field name="columna21" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna21"/>
+		<fieldDescription><![CDATA[columna21]]></fieldDescription>
+	</field>
+	<field name="columna22" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna22"/>
+		<fieldDescription><![CDATA[columna22]]></fieldDescription>
+	</field>
+	<field name="columna23" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna23"/>
+		<fieldDescription><![CDATA[columna23]]></fieldDescription>
+	</field>
+	<field name="columna24" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna24"/>
+		<fieldDescription><![CDATA[columna24]]></fieldDescription>
+	</field>
+	<field name="columna25" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna25"/>
+		<fieldDescription><![CDATA[columna25]]></fieldDescription>
+	</field>
+	<field name="columna26" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna26"/>
+		<fieldDescription><![CDATA[columna26]]></fieldDescription>
+	</field>
+	<field name="columna27" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna27"/>
+		<fieldDescription><![CDATA[columna27]]></fieldDescription>
+	</field>
+	<field name="columna28" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna28"/>
+		<fieldDescription><![CDATA[columna28]]></fieldDescription>
+	</field>
+	<field name="columna29" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna29"/>
+		<fieldDescription><![CDATA[columna29]]></fieldDescription>
+	</field>
+	<field name="columna30" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna30"/>
+		<fieldDescription><![CDATA[columna30]]></fieldDescription>
+	</field>
+	<field name="columna31" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna31"/>
+		<fieldDescription><![CDATA[columna31]]></fieldDescription>
+	</field>
+	<field name="columna32" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna32"/>
+		<fieldDescription><![CDATA[columna32]]></fieldDescription>
+	</field>
+	<field name="columna33" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna33"/>
+		<fieldDescription><![CDATA[columna33]]></fieldDescription>
+	</field>
+	<field name="columna34" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna34"/>
+		<fieldDescription><![CDATA[columna34]]></fieldDescription>
+	</field>
+	<field name="columna35" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna35"/>
+		<fieldDescription><![CDATA[columna35]]></fieldDescription>
+	</field>
+	<field name="columna36" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna36"/>
+		<fieldDescription><![CDATA[columna36]]></fieldDescription>
+	</field>
+	<field name="columna37" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna37"/>
+		<fieldDescription><![CDATA[columna37]]></fieldDescription>
+	</field>
+	<field name="columna38" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna38"/>
+		<fieldDescription><![CDATA[columna38]]></fieldDescription>
+	</field>
+	<field name="columna39" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna39"/>
+		<fieldDescription><![CDATA[columna39]]></fieldDescription>
+	</field>
+	<field name="columna40" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="columna40"/>
+		<fieldDescription><![CDATA[columna40]]></fieldDescription>
+	</field>
+	<group name="Group1"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="4" y="2" width="550" height="13" uuid="b91c6c71-03c9-4e8b-b9c2-b6ec34eb772e">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[AFP Integra S.A.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="13" width="550" height="13" uuid="9b59e754-b930-44df-8816-3b7d9100e754">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Av. Canaval y Moreyra No. 522, Piso 6 San Isidro]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="4" y="42" width="550" height="13" uuid="9d62ce01-b813-4eba-b2ee-4d4d5a4a85ed">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA["(Expresado en " + ($F{columna12}.contains("S") ? "Nuevos Soles" : "Dolares") +")"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4" y="28" width="550" height="13" uuid="e8085a0d-2e7d-4778-b4ff-47a7fb1cbeb6">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA["ESTADOS DE RESULTADOS AL " + $F{columna9} + " DE " + $F{columna10} + " DEL " + $F{columna11}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="18" splitType="Immediate">
+			<textField>
+				<reportElement style="miestilo" x="82" y="1" width="298" height="14" uuid="3d6202b6-999c-4621-89c9-c027dc3ad4e4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{columna4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="miestilo" x="385" y="1" width="100" height="14" uuid="8d2b10fd-aa39-4315-8259-0a750915cba3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{columna6}.contains("0.00") ? $F{columna2}.contains("A") ? $F{columna6} : "" : $F{columna6}.contains("-") ? "(" + $F{columna6} + ")" : $F{columna6}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

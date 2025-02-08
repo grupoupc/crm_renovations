@@ -1,0 +1,69 @@
+@Library('pipeline_templates') _
+
+pipelineMaven {
+   
+	supportEmail 		= 'luis.polo@sura.pe'
+
+//Datos del Artifactory
+	artifactory = [:]
+		artifactory.repoName  = 'AFP-Integra'
+		artifactory.path	  = 'premium-web'
+		artifactory.fullPath  = "${artifactory.repoName}/${artifactory.path}"
+  
+//Datos de las fuentes
+  source = [
+		path   : 	'codigo/servicios/premium-web-service'
+	]
+    
+//Procesos 
+	processCi = [
+		unitTests 			:	false
+		,integrationTests 	:	false
+		,staticAnalysis		:	true
+		,validateQualityGate:	false
+		,publishArtifactAlpha:  false
+		
+	]
+	
+//Test
+	test = [
+		jUnitTestReport 		: 'target/surefire-reports/TEST-*.xml'
+		,jIntegrationTestReport : ''
+		,jAceptanceTestReport 	: ''
+	]
+
+
+
+
+
+	//Datos de los Servidor de Despliegue
+	deployServer = [
+		credentialsId 	: "jboss-desa_admin"
+		,controller	 	: "10.219.66.141:9990"
+		,profile		: "ha"
+		,server_groups  : "sura-cluster-group-desarrollo-01"
+	]
+
+	processDev = [
+		deploy				: true
+		//,mavenGoals			: "clean package  -P ambiente-desarrollo -DskipTests=true"
+		,mavenGoals			: "clean package  -DskipTests=true"
+	]
+
+
+
+	//Datos de los Servidor de Despliegue de Test
+	deployServerTest = [
+		credentialsId 	: "jboss-test_admin"
+		,controller	 	: "10.219.66.142:9990"
+		,profile		: "ha"
+		,server_groups  : "sura-cluster-group-testing-01"
+	]
+
+	processTest = [
+		deploy				: false
+		,mavenGoals			: "clean package  -P ambiente-testing -DskipTests=true"
+	]
+
+
+}
