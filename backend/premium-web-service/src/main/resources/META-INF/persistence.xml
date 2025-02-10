@@ -10,9 +10,9 @@
 		<jta-data-source>java:/dsIntegra</jta-data-source>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
-			<!--<property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://192.168.7.12;databaseName=siscob;;encrypt=false;"/>			
+			<!--<property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://207.244.237.0;databaseName=siscob;;encrypt=false;"/>			
 			<property name="javax.persistence.jdbc.user" value="sa"/>
-			<property name="javax.persistence.jdbc.password" value="$b1zn3s$2024$"/>-->
+			<property name="javax.persistence.jdbc.password" value="$b1zn3s$2017$"/>-->
 			<property name="hibernate.show_sql" value="true"/>
 			<property name="spring.jpa.properties.hibernate.format_sql" value="true"/>
 		</properties>
