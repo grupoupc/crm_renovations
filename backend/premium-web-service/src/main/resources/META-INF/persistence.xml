@@ -16,7 +16,6 @@
 			<property name="hibernate.show_sql" value="true"/>
 			<property name="spring.jpa.properties.hibernate.format_sql" value="true"/>
 		</properties>
-
 	</persistence-unit>
 
 </persistence>
