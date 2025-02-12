@@ -2,11 +2,11 @@
 
 pipelineMaven {
    
-	supportEmail 		= 'luis.polo@sura.pe'
+	supportEmail 		= 'hacale14@gmail.com'
 
 //Datos del Artifactory
 	artifactory = [:]
-		artifactory.repoName  = 'AFP-Integra'
+		artifactory.repoName  = 'PIMAYTI'
 		artifactory.path	  = 'premium-web'
 		artifactory.fullPath  = "${artifactory.repoName}/${artifactory.path}"
   
