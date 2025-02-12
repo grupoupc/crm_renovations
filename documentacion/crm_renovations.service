@@ -1,0 +1,19 @@
+[Unit]
+Description=Java Service CRM Corporativo
+After network.target=crm_renovations.service
+
+[Service]
+#User=desarrollo
+# The configuration file application.properties should be here:
+#WorkingDirectory=/data 
+Type = forking
+SuccessExitStatus=143
+TimeoutStopSec=10
+Restart=on-failure
+RestartSec=5
+ExecStart = /usr/local/bin/crm_renovations.sh start
+ExecStop = /usr/local/bin/crm_renovations.sh stop
+ExecReload = /usr/local/bin/crm_renovations.sh reload
+
+[Install]
+WantedBy=multi-user.target
