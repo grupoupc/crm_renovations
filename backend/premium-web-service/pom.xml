@@ -119,7 +119,6 @@
 			<version>1.11.339</version>
 		</dependency>
 	</dependencies>
-
 	<profiles>
 		<profile>
 			<id>ambiente-desarrollo</id>
@@ -146,113 +145,6 @@
 				<ambiente>produccion</ambiente>
 				<dependencias.alcance>compile</dependencias.alcance>
 			</properties>
-		</profile>
-
-		<profile>
-			<id>onpremisse</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<packaging.type>war</packaging.type>
-				<start-class>pe.com.integra.api.premium.PremiumApplication</start-class>
-			</properties>
-			<dependencies>
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-web</artifactId>
-					<exclusions>
-						<exclusion>
-							<groupId>org.apache.tomcat.embed</groupId>
-							<artifactId>tomcat-embed-websocket</artifactId>
-						</exclusion>
-						<exclusion>
-							<groupId>com.fasterxml.jackson.core</groupId>
-							<artifactId>jackson-annotations</artifactId>
-						</exclusion>
-						<exclusion>
-							<groupId>com.fasterxml.jackson.core</groupId>
-							<artifactId>jackson-databind</artifactId>
-						</exclusion>
-						<exclusion>
-							<groupId>com.fasterxml.jackson.core</groupId>
-							<artifactId>jackson-core</artifactId>
-						</exclusion>
-						<exclusion>
-							<groupId>com.fasterxml.jackson.datatype</groupId>
-							<artifactId>jackson-datatype-jdk8</artifactId>
-						</exclusion>
-						<exclusion>
-							<groupId>com.fasterxml.jackson.datatype</groupId>
-							<artifactId>jackson-datatype-jsr310</artifactId>
-						</exclusion>
-						<exclusion>
-							<groupId>com.fasterxml.jackson.module</groupId>
-							<artifactId>jackson-module-parameter-names</artifactId>
-						</exclusion>
-					</exclusions>
-				</dependency>
-			</dependencies>
-		</profile>
-
-		<profile>
-			<id>cloud</id>
-			<properties>
-				<packaging.type>jar</packaging.type>
-				<start-class>pe.com.integra.api.premium.PremiumApplicacionCloud</start-class>
-			</properties>
-			<dependencies>
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-jetty</artifactId>
-				</dependency>
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-web</artifactId>
-					<exclusions>
-						<exclusion>
-							<groupId>org.apache.tomcat.embed</groupId>
-							<artifactId>tomcat-embed-websocket</artifactId>
-						</exclusion>
-						<exclusion>
-							<artifactId>tomcat-embed-el</artifactId>
-							<groupId>org.apache.tomcat.embed</groupId>
-						</exclusion>
-						<exclusion>
-							<artifactId>tomcat-embed-core</artifactId>
-							<groupId>org.apache.tomcat.embed</groupId>
-						</exclusion>
-						<exclusion>
-							<artifactId>tomcat-embed-websocket</artifactId>
-							<groupId>org.apache.tomcat.embed</groupId>
-						</exclusion>
-						<exclusion>
-							<groupId>com.fasterxml.jackson.core</groupId>
-							<artifactId>jackson-annotations</artifactId>
-						</exclusion>
-						<exclusion>
-							<groupId>com.fasterxml.jackson.core</groupId>
-							<artifactId>jackson-databind</artifactId>
-						</exclusion>
-						<exclusion>
-							<groupId>com.fasterxml.jackson.core</groupId>
-							<artifactId>jackson-core</artifactId>
-						</exclusion>
-						<exclusion>
-							<groupId>com.fasterxml.jackson.datatype</groupId>
-							<artifactId>jackson-datatype-jdk8</artifactId>
-						</exclusion>
-						<exclusion>
-							<groupId>com.fasterxml.jackson.datatype</groupId>
-							<artifactId>jackson-datatype-jsr310</artifactId>
-						</exclusion>
-						<exclusion>
-							<groupId>com.fasterxml.jackson.module</groupId>
-							<artifactId>jackson-module-parameter-names</artifactId>
-						</exclusion>
-					</exclusions>
-				</dependency>
-			</dependencies>
 		</profile>
 	</profiles>
 
